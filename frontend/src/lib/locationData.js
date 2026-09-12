@@ -1,0 +1,127 @@
+export const LOCATION_DATA = {
+  'Andhra Pradesh': {
+    'Visakhapatnam': ['Visakhapatnam', 'Gajuwaka', 'Bheemunipatnam'],
+    'Krishna': ['Vijayawada', 'Machilipatnam', 'Gudivada'],
+    'Guntur': ['Guntur', 'Tenali', 'Narasaraopet'],
+    'East Godavari': ['Kakinada', 'Rajahmundry', 'Amalapuram'],
+    'Chittoor': ['Tirupati', 'Chittoor', 'Madanapalle'],
+  },
+  'Gujarat': {
+    'Ahmedabad': ['Ahmedabad', 'Gandhinagar', 'Sanand'],
+    'Surat': ['Surat', 'Bardoli', 'Navsari'],
+    'Vadodara': ['Vadodara', 'Anand', 'Ankleshwar'],
+    'Rajkot': ['Rajkot', 'Morbi', 'Gondal'],
+  },
+  'Karnataka': {
+    'Bengaluru Urban': ['Bangalore', 'Whitefield', 'Electronic City', 'Yelahanka'],
+    'Mysuru': ['Mysore', 'Nanjangud', 'Hunsur'],
+    'Dharwad': ['Hubli', 'Dharwad', 'Gadag'],
+    'Mangaluru': ['Mangalore', 'Udupi', 'Kundapura'],
+  },
+  'Kerala': {
+    'Ernakulam': ['Kochi', 'Aluva', 'Perumbavoor'],
+    'Thiruvananthapuram': ['Thiruvananthapuram', 'Attingal', 'Nedumangad'],
+    'Kozhikode': ['Kozhikode', 'Vadakara', 'Thamarassery'],
+    'Thrissur': ['Thrissur', 'Chalakudy', 'Kodungallur'],
+  },
+  'Madhya Pradesh': {
+    'Bhopal': ['Bhopal', 'Hoshangabad', 'Sehore'],
+    'Indore': ['Indore', 'Dewas', 'Mhow'],
+    'Gwalior': ['Gwalior', 'Morena', 'Bhind'],
+    'Jabalpur': ['Jabalpur', 'Katni', 'Mandla'],
+  },
+  'Maharashtra': {
+    'Mumbai City': ['Mumbai', 'Colaba', 'Bandra', 'Andheri', 'Borivali'],
+    'Mumbai Suburban': ['Thane', 'Navi Mumbai', 'Kalyan', 'Dombivli', 'Vasai'],
+    'Pune': ['Pune', 'Pimpri', 'Chinchwad', 'Lonavala', 'Talegaon'],
+    'Nagpur': ['Nagpur', 'Wardha', 'Kamptee'],
+    'Nashik': ['Nashik', 'Malegaon', 'Igatpuri'],
+    'Aurangabad': ['Aurangabad', 'Jalna', 'Paithan'],
+    'Kolhapur': ['Kolhapur', 'Sangli', 'Miraj'],
+    'Solapur': ['Solapur', 'Pandharpur', 'Barshi'],
+  },
+  'Delhi': {
+    'Central Delhi': ['Connaught Place', 'Paharganj', 'Karol Bagh'],
+    'South Delhi': ['New Delhi', 'Hauz Khas', 'Saket', 'Lajpat Nagar'],
+    'North Delhi': ['Rohini', 'Pitampura', 'Shalimar Bagh'],
+    'East Delhi': ['Preet Vihar', 'Mayur Vihar', 'Laxmi Nagar'],
+    'West Delhi': ['Dwarka', 'Janakpuri', 'Rajouri Garden'],
+  },
+  'Rajasthan': {
+    'Jaipur': ['Jaipur', 'Amer', 'Chomu'],
+    'Jodhpur': ['Jodhpur', 'Pali', 'Barmer'],
+    'Udaipur': ['Udaipur', 'Nathdwara', 'Chittorgarh'],
+    'Kota': ['Kota', 'Bundi', 'Jhalawar'],
+  },
+  'Tamil Nadu': {
+    'Chennai': ['Chennai', 'Tambaram', 'Avadi', 'Ambattur'],
+    'Coimbatore': ['Coimbatore', 'Tiruppur', 'Pollachi'],
+    'Madurai': ['Madurai', 'Dindigul', 'Sivakasi'],
+    'Salem': ['Salem', 'Namakkal', 'Omalur'],
+    'Tiruchirappalli': ['Tiruchirappalli', 'Karur', 'Kumbakonam'],
+  },
+  'Telangana': {
+    'Hyderabad': ['Hyderabad', 'Secunderabad', 'Kukatpally', 'Madhapur', 'Gachibowli'],
+    'Rangareddy': ['Shamshabad', 'Maheshwaram', 'Chevella'],
+    'Warangal Urban': ['Warangal', 'Hanamkonda', 'Kazipet'],
+    'Nizamabad': ['Nizamabad', 'Bodhan', 'Armoor'],
+  },
+  'Uttar Pradesh': {
+    'Lucknow': ['Lucknow', 'Rae Bareli', 'Barabanki'],
+    'Agra': ['Agra', 'Firozabad', 'Mathura'],
+    'Varanasi': ['Varanasi', 'Mirzapur', 'Ghazipur'],
+    'Kanpur Nagar': ['Kanpur', 'Unnao', 'Akbarpur'],
+    'Prayagraj': ['Prayagraj', 'Allahabad', 'Naini'],
+    'Gautam Buddha Nagar': ['Noida', 'Greater Noida', 'Dadri'],
+    'Ghaziabad': ['Ghaziabad', 'Loni', 'Modinagar'],
+  },
+  'West Bengal': {
+    'Kolkata': ['Kolkata', 'Howrah', 'Barrackpore', 'Salt Lake'],
+    'North 24 Parganas': ['Barasat', 'Basirhat', 'Habra'],
+    'Purba Medinipur': ['Haldia', 'Tamluk', 'Contai'],
+    'Murshidabad': ['Berhampore', 'Jiaganj', 'Dhulian'],
+  },
+}
+
+export function uniqSorted(arr) {
+  return [...new Set(arr)].sort((a, b) => a.localeCompare(b))
+}
+
+export function getCityCoordinates(cityName) {
+  const cityMap = {
+    'Mumbai': [19.0760, 72.8777],
+    'Delhi': [28.6139, 77.2090],
+    'New Delhi': [28.6139, 77.2090],
+    'Bangalore': [12.9716, 77.5946],
+    'Hyderabad': [17.3850, 78.4867],
+    'Chennai': [13.0827, 80.2707],
+    'Kolkata': [22.5726, 88.3639],
+    'Pune': [18.5204, 73.8567],
+    'Ahmedabad': [23.0225, 72.5714],
+    'Jaipur': [26.9124, 75.7873],
+    'Surat': [21.1702, 72.8311],
+    'Lucknow': [26.8467, 80.9462],
+    'Nagpur': [21.1458, 79.0882],
+    'Indore': [22.7196, 75.8577],
+    'Bhopal': [23.2599, 77.4126],
+    'Visakhapatnam': [17.6868, 83.2185],
+    'Patna': [25.5941, 85.1376],
+    'Vadodara': [22.3072, 73.1812],
+    'Ghaziabad': [28.6692, 77.4538],
+    'Noida': [28.5355, 77.3910],
+    'Coimbatore': [11.0168, 76.9558],
+    'Agra': [27.1767, 78.0081],
+    'Mysore': [12.2958, 76.6394],
+    'Varanasi': [25.3176, 82.9739],
+    'Kochi': [9.9312, 76.2673],
+    'Kanpur': [26.4499, 80.3319],
+    'Thiruvananthapuram': [8.5241, 76.9366],
+    'Vijayawada': [16.5062, 80.6480],
+    'Warangal': [17.9784, 79.5941],
+    'Rajkot': [22.3039, 70.8022],
+    'Guwahati': [26.1445, 91.7362],
+    'Thane': [19.2183, 72.9781],
+    'Navi Mumbai': [19.0330, 73.0297],
+  }
+  return cityMap[cityName] || [20.5937, 78.9629]
+}
