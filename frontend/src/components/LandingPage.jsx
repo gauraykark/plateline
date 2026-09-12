@@ -727,7 +727,7 @@ export default function LandingPage({ onGetStarted }) {
                     required
                     value={contactForm.name}
                     onChange={e => setContactForm(p => ({ ...p, name: e.target.value }))}
-                    placeholder="e.g. Radisson Blu or Feeding Hope NGO"
+                    placeholder="Enter organization or full name"
                     className="w-full px-4 py-3 rounded-xl border border-stone-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#0D3B2E]"
                   />
                 </div>
@@ -739,7 +739,7 @@ export default function LandingPage({ onGetStarted }) {
                     required
                     value={contactForm.email}
                     onChange={e => setContactForm(p => ({ ...p, email: e.target.value }))}
-                    placeholder="name@organization.org"
+                    placeholder="Enter official email address"
                     className="w-full px-4 py-3 rounded-xl border border-stone-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#0D3B2E]"
                   />
                 </div>
@@ -751,7 +751,7 @@ export default function LandingPage({ onGetStarted }) {
                     required
                     value={contactForm.message}
                     onChange={e => setContactForm(p => ({ ...p, message: e.target.value }))}
-                    placeholder="Tell us about your surplus volume or city distribution capabilities..."
+                    placeholder="Enter your message or surplus requirements..."
                     className="w-full px-4 py-3 rounded-xl border border-stone-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#0D3B2E] resize-none"
                   />
                 </div>
