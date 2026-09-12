@@ -1,15 +1,20 @@
-# Feed Ferry — Enterprise Food Rescue & Dispatch Network
+# Plateline — Commercial Surplus Dispatch Network
 
-Feed Ferry is an enterprise-grade surplus food dispatch network connecting commercial food donors (restaurants, caterers, hotels, banquet halls) directly with verified local non-profit food banks and shelters.
+> **🌐 Live Deployment:** [plateline-network.vercel.app](https://plateline-network.vercel.app)  
+> **📦 Repository:** [github.com/gauraykark/plateline](https://github.com/gauraykark/plateline)
 
-## Highlights & Upgrades (v2.0)
+Plateline is an enterprise-grade surplus food dispatch network connecting commercial food donors (hotels, caterers, banquet halls, restaurants) directly with verified local non-profit food banks and shelters through real-time coordination and cryptographic custody verification.
+
+---
+
+## ⚡ Key Platform Capabilities
 - **Zero AI Slop & Refined Aesthetics**: Warm stone background (`#FBFBF9`), Deep Forest Emerald (`#0D3B2E`), bespoke Lucide icon badges, and clean typography.
-- **Two-Factor Handover Verification**: 6-digit handover OTP generated on donation acceptance, securely verified by NGO drivers before pickup.
-- **Photo Attachments with Supabase Storage**: Donors upload food photographs with live preview and upload to the `donation-photos` bucket.
-- **Real-Time Interactive Maps & Leaflet Tracking**: Custom SVG vector pins for donors and shelters, live radar pulse effects, and custody route tracking.
-- **In-App Notification Center**: Instant push notifications for dispatch updates, handover confirmations, and message alerts.
-- **Urgency Radar & Filters**: Dynamic countdown timers ("Expires in 1h 24m") with color-coded badges, cascading State/District/City selectors, and food category pills.
-- **ESG & Impact Analytics**: Bento-grid metrics calculating diverted food (kg), meals provided, CO₂ emissions prevented, freshwater conserved, and downloadable Impact Certificates.
+- **Two-Factor Custody Verification**: 6-digit handover OTP generated on donation acceptance, securely verified by NGO drivers before custody transfer.
+- **Real-Time Photo Verification**: Food photograph attachments stored in Supabase Storage buckets with client-side preview.
+- **Interactive Proximity Radar & Leaflet Tracking**: Custom SVG vector pins for donors and shelters, live radar pulse effects, and custody route tracking.
+- **In-App Notification Center**: Instant push notifications for dispatch updates, handover confirmations, and real-time chat alerts.
+- **Urgency Radar & Cascading Filters**: Dynamic countdown timers ("Expires in 1h 24m") with color-coded badges, cascading State/District/City selectors, and food category pills.
+- **Automated ESG & Impact Certificates**: Bento-grid metrics calculating diverted food (kg), meals provided, CO₂ emissions prevented, freshwater conserved, and printable ESG Impact Certificates.
 
 ## Architecture
 - **Frontend**: React 19, Tailwind CSS v4, Lucide React, React Leaflet, React Hot Toast
