@@ -60,13 +60,11 @@ export default function Navbar({ onLoginClick, onRegisterClick, onTabChange }) {
             className="flex items-center gap-2.5 cursor-pointer select-none group"
             onClick={() => { if (profile) onTabChange('overview') }}
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0D3B2E] to-[#08241C] flex items-center justify-center text-white shadow-sm transition-transform duration-200 group-hover:scale-105 border border-emerald-900/30">
-              <PlatelineLogo size={22} className="text-emerald-400 transition-transform duration-200 group-hover:rotate-6" />
-            </div>
-            <div>
-              <span className="font-extrabold text-lg tracking-tight text-[#0D3B2E] block leading-tight">Plateline</span>
-              <p className="text-[11px] text-slate-500 font-medium hidden sm:block">Commercial Surplus Dispatch</p>
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="Plateline" 
+              className="h-8 sm:h-9 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]" 
+            />
           </div>
 
           {/* Public Desktop Nav */}

@@ -28,12 +28,11 @@ function AppInner() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#FBFBF9]">
         <div className="text-center space-y-4">
-          <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#0D3B2E] to-[#08241C] flex items-center justify-center text-white mx-auto shadow-lg animate-pulse border border-emerald-900/40">
-            <PlatelineLogo size={30} className="text-emerald-400" />
+          <div className="flex items-center justify-center mx-auto mb-2 animate-pulse">
+            <img src="/logo.png" alt="Plateline" className="h-12 w-auto object-contain" />
           </div>
           <div>
-            <h3 className="font-extrabold text-base text-[#0D3B2E] tracking-tight">Plateline</h3>
-            <p className="text-xs text-slate-500 mt-0.5">Initializing surplus dispatch network...</p>
+            <p className="text-xs text-slate-500 mt-1">Initializing surplus dispatch network...</p>
           </div>
         </div>
       </div>
