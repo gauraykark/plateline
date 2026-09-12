@@ -1,6 +1,6 @@
 -- =============================================
---  Feed Ferry — Supabase Database Schema
---  Enterprise Food Rescue Platform
+--  Plateline — Supabase Database Schema
+--  Commercial Surplus Dispatch Network
 -- =============================================
 
 -- Enable UUID extension
