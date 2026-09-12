@@ -253,7 +253,7 @@ export function RegisterModal({ onClose, onAuthSuccess }) {
           </label>
           <input 
             type="text" 
-            placeholder={form.role === 'ngo' ? 'e.g. Hope Community Food Bank' : 'e.g. Radisson Blu Banquets'} 
+            placeholder={form.role === 'ngo' ? 'Enter NGO or organization name' : 'Enter restaurant or business name'} 
             required 
             value={form.name} 
             onChange={e => set('name', e.target.value)}
@@ -266,7 +266,7 @@ export function RegisterModal({ onClose, onAuthSuccess }) {
             <label className="block text-xs font-bold text-slate-700 mb-1">Email Address *</label>
             <input 
               type="email" 
-              placeholder="contact@org.com" 
+              placeholder="Enter email address" 
               required 
               value={form.email} 
               onChange={e => set('email', e.target.value)}
@@ -277,7 +277,7 @@ export function RegisterModal({ onClose, onAuthSuccess }) {
             <label className="block text-xs font-bold text-slate-700 mb-1">Password *</label>
             <input 
               type="password" 
-              placeholder="Min 6 chars" 
+              placeholder="Enter password (min 6 chars)" 
               required 
               minLength={6} 
               value={form.password} 
@@ -296,7 +296,7 @@ export function RegisterModal({ onClose, onAuthSuccess }) {
           </label>
           <input 
             type="text" 
-            placeholder={form.role === 'ngo' ? 'e.g. KA/2021/028491' : 'e.g. 11221334000542'} 
+            placeholder={form.role === 'ngo' ? 'Enter Darpan ID or Registration No.' : 'Enter FSSAI License or GSTIN'} 
             value={form.registration_number || ''} 
             onChange={e => set('registration_number', e.target.value)}
             className="w-full border border-stone-300 rounded-xl px-4 py-2.5 text-xs focus:outline-none focus:ring-2 focus:ring-[#0D3B2E] placeholder:text-slate-400 font-mono" 
