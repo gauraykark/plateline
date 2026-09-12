@@ -23,6 +23,7 @@ import {
   MapPin
 } from 'lucide-react'
 import toast from 'react-hot-toast'
+import { PlatelineLogo } from './PlatelineLogo'
 
 export default function LandingPage({ onGetStarted }) {
   const [stats, setStats] = useState({
@@ -776,9 +777,11 @@ export default function LandingPage({ onGetStarted }) {
       ===================================================== */}
       <footer className="bg-[#092B21] text-white/70 py-12 border-t border-white/10 text-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-2 text-white">
-            <Leaf size={18} className="text-[#10B981]" />
-            <span className="font-extrabold text-sm tracking-tight">Plateline</span>
+          <div className="flex items-center gap-2.5 text-white">
+            <div className="w-7 h-7 rounded-lg bg-emerald-950/60 border border-emerald-500/20 flex items-center justify-center">
+              <PlatelineLogo size={16} className="text-emerald-400" />
+            </div>
+            <span className="font-extrabold text-sm tracking-tight text-white">Plateline</span>
             <span className="text-[11px] text-white/50">© {new Date().getFullYear()} Plateline Network. All rights reserved.</span>
           </div>
 

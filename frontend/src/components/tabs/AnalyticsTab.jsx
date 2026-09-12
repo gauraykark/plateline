@@ -9,9 +9,9 @@ import {
   Droplets, 
   Award, 
   Printer, 
-  X, 
-  Leaf
+  X
 } from 'lucide-react'
+import { PlatelineLogo } from '../PlatelineLogo'
 
 export default function AnalyticsTab() {
   const { user, profile } = useAuth()
@@ -208,7 +208,9 @@ export default function AnalyticsTab() {
             <div id="printable-certificate" className="p-8 border-4 border-[#0D3B2E] rounded-2xl relative bg-[#FBFBF9] text-slate-900 text-center space-y-6">
               
               <div className="flex items-center justify-center gap-2 text-[#0D3B2E] mb-2">
-                <Leaf size={28} className="text-[#10B981]" />
+                <div className="w-8 h-8 rounded-lg bg-[#0D3B2E] text-white flex items-center justify-center">
+                  <PlatelineLogo size={20} className="text-emerald-400" />
+                </div>
                 <span className="font-extrabold text-xl tracking-tight">PLATELINE NETWORK</span>
               </div>
 

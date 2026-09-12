@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from 'react'
 import { useAuth } from '../context/AuthContext'
 import { useNotifications } from '../hooks/useNotifications'
 import { 
-  Leaf, 
   Menu, 
   X, 
   Bell, 
@@ -13,6 +12,7 @@ import {
   ChevronDown,
   ArrowRight
 } from 'lucide-react'
+import { PlatelineLogo } from './PlatelineLogo'
 
 export default function Navbar({ onLoginClick, onRegisterClick, onTabChange }) {
   const { profile, logout } = useAuth()
@@ -60,14 +60,11 @@ export default function Navbar({ onLoginClick, onRegisterClick, onTabChange }) {
             className="flex items-center gap-2.5 cursor-pointer select-none group"
             onClick={() => { if (profile) onTabChange('overview') }}
           >
-            <div className="w-10 h-10 rounded-xl bg-[#0D3B2E] flex items-center justify-center text-white shadow-sm transition-transform duration-200 group-hover:scale-105">
-              <Leaf size={20} className="text-[#10B981]" />
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0D3B2E] to-[#08241C] flex items-center justify-center text-white shadow-sm transition-transform duration-200 group-hover:scale-105 border border-emerald-900/30">
+              <PlatelineLogo size={22} className="text-emerald-400 transition-transform duration-200 group-hover:rotate-6" />
             </div>
             <div>
-              <div className="flex items-center gap-1.5">
-                <span className="font-extrabold text-lg tracking-tight text-[#0D3B2E]">Plateline</span>
-                <span className="text-[10px] uppercase font-bold tracking-widest bg-[#E8F2EC] text-[#0D3B2E] px-1.5 py-0.5 rounded">V2.0</span>
-              </div>
+              <span className="font-extrabold text-lg tracking-tight text-[#0D3B2E] block leading-tight">Plateline</span>
               <p className="text-[11px] text-slate-500 font-medium hidden sm:block">Commercial Surplus Dispatch</p>
             </div>
           </div>

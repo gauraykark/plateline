@@ -6,7 +6,7 @@ import Navbar from './components/Navbar'
 import LandingPage from './components/LandingPage'
 import Dashboard from './components/Dashboard'
 import { LoginModal, RegisterModal } from './components/AuthModals'
-import { Leaf } from 'lucide-react'
+import { PlatelineLogo } from './components/PlatelineLogo'
 
 function AppInner() {
   const { profile, loading } = useAuth()
@@ -28,8 +28,8 @@ function AppInner() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#FBFBF9]">
         <div className="text-center space-y-4">
-          <div className="w-14 h-14 rounded-2xl bg-[#0D3B2E] flex items-center justify-center text-white mx-auto shadow-lg animate-pulse">
-            <Leaf size={28} className="text-[#10B981]" />
+          <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#0D3B2E] to-[#08241C] flex items-center justify-center text-white mx-auto shadow-lg animate-pulse border border-emerald-900/40">
+            <PlatelineLogo size={30} className="text-emerald-400" />
           </div>
           <div>
             <h3 className="font-extrabold text-base text-[#0D3B2E] tracking-tight">Plateline</h3>
